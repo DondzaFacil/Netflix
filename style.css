@@ -1,0 +1,214 @@
+/*Resetando estilos css*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    background-color: black;
+}
+
+hr{
+    color: gray;
+}
+
+/*Estilos gerais*/
+.seccao{
+    width: 100%;
+    float: left;
+}
+
+.conteudo{
+    width: 65%;
+    margin: 0 auto;
+}
+
+/*Cabecalho inicio*/
+.seccao.nav{
+    background-size: cover;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.527),rgba(0,0,0,0.75)), url(banner.png);
+}
+.navegacao{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navegacao img{
+    width: 10%;
+}
+.navegacao a{
+    background-color: red;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.navegacao-detalhes{
+    padding: 10%;
+    text-align: center;
+}
+.navegacao-detalhes h1{
+    font-size: 2em;
+    margin: 0 0 2% 0;
+}
+.navegacao-detalhes p{
+    margin: 0 0 2% 0;
+}
+
+.email{
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    margin: 1% 0 0 0;
+    align-items: center;
+}
+.email input{
+    padding:9px 0;
+    width: 40%;
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+.email button{
+    padding:10px 25px;
+    background-color: red;
+    border: none;
+    border-radius: 2px;
+    font-weight: bolder;
+}
+/*Cabecalho fim*/
+/*Enjoy Inicio*/
+.conteudo.detalhes{
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3% auto;
+}
+.conteudo.detalhes img, .tv{
+    width: 40%;
+}
+.conteudo.detalhes>div>h2, .titulo{
+    font-size: 2em;
+    margin: 3% 0;
+}
+.detalhes1{
+    padding: 4% 0;
+}
+/*Enjoy fim*/
+
+/*FAQ inicio*/
+.faq{
+    padding: 4% 0;
+}
+.faq h2{
+    text-align: center;
+    margin: 1% 0;
+}
+.faq ul li{
+    background-color: gray;
+    margin: 1% 0;
+    padding: 25px 10px;
+    font-weight: bolder;
+}
+
+.faq ul li i{
+    float: right;
+    font-size: 2em;
+}
+/*FAQ fim*/
+.conteudo.rodape{
+    display:flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 0 2% 0;
+    flex-wrap: wrap;
+}
+.box-rodape{
+    display:flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.opcoes{
+    background-color: black;
+    width: 70%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+/*Breakpoints ou Responsividade do SIte*/
+/*Mobile e Tablet*/
+@media all and (min-width: 645px) and (max-width: 1279px){
+    .conteudo{
+        width: 90%;
+    }
+/*    Cabecalho inicio*/
+    .email{
+        flex-direction: column;
+    }
+    .email input{
+        width: 80%;
+        margin: 0 0 2% 0;
+    }
+/*    Cabelcalho fim*/
+/*    Enjoy inicio*/
+    .conteudo.detalhes{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .conteudo.detalhes img, .tv{
+    width: 100%;
+    }
+    #detalhes-mobile{
+        flex-direction: column;
+        text-align: center;
+    }
+    .detalhes1{
+        text-align: center;
+    }
+/*    Enjoy fim*/
+/*    Rodape inicio*/
+    
+}
+
+@media all and (max-width: 644px){
+    .conteudo{
+        width: 90%;
+    }
+/*    Cabecalho inicio*/
+    .email{
+        flex-direction: column;
+    }
+    .email input{
+        width: 80%;
+        margin: 0 0 2% 0;
+    }
+/*    Cabelcalho fim*/
+/*    Enjoy inicio*/
+    .conteudo.detalhes{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .conteudo.detalhes img, .tv{
+    width: 100%;
+    }
+    #detalhes-mobile{
+        flex-direction: column;
+        text-align: center;
+    }
+    .detalhes1{
+        text-align: center;
+    }
+/*    Enjoy fim*/
+/*    Rodape inicio*/
+    
+}
